@@ -1,0 +1,168 @@
+/* Apply background image to the entire page */
+/* Apply background image properly */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('../assets/besttest.jpg') no-repeat center center;
+    background-size: contain; /* This prevents excessive zoom */
+    position: relative;
+}
+
+
+/* Add a transparent overlay on the entire page */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+/* Ensure all content appears above the overlay */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    color: white; /* Ensure text is visible */
+}
+
+/* Move header to the top */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px; /* Adjust margin to move it to the top */
+}
+
+/* Reduce spacing between heading and subheading */
+.header h1 {
+    margin-bottom: 5px;
+    font-size: 28px; /* Adjust if needed */
+}
+
+.header h3 {
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+/* Move and center the card */
+.Services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Pushes the section down */
+    width: 100%;
+}
+
+/* Card Styling */
+.service-card {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: black; /* Ensure text remains visible */
+}
+
+
+.test-button {
+    background-color: #0c6b1a; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.test-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.service-card {
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.test-button {
+    background-color: #106c22;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.test-button:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.start-button, .stop-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.start-button {
+    background-color: #28a745;
+}
+
+.start-button:hover {
+    background-color: #1e7e34;
+}
+
+.stop-button {
+    background-color: #dc3545;
+}
+
+.stop-button:hover {
+    background-color: #b02a37;
+}
+
+
+.structured-data {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .structured-data ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .structured-data li {
+    margin-bottom: 10px;
+  }
+  
+  .structured-data strong {
+    font-weight: bold;
+  }
+  
