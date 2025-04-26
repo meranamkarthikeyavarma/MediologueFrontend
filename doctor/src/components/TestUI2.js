@@ -214,8 +214,8 @@ const TestUI2 = () => {
   return (
     <div className="container">
       <header className="header">
-        <h1>INHS Kalyani Super Speciality Hospital</h1>
-        <h3>M7P2+P2V, Malkapuram, Gandhigram Post, Nausena Baugh, Visakhapatnam, Andhra Pradesh 530005</h3>
+        <h1>Sagi Ramakrishnam Raju Super Speciality Hospital</h1>
+        <h3>Chinna Amiram, Bhimavaram-2, West Godavari Dist, Andhra Pradesh 534204</h3>
       </header>
 
       <div className="Services">
